@@ -1,0 +1,96 @@
+PODS:
+  - IQKeyboardManager (6.1.1)
+  - Masonry (1.1.0)
+  - MJExtension (3.0.15.1)
+  - ReactiveObjC (3.1.0)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - WLBaseView (0.0.1):
+    - ReactiveObjC
+    - WLBaseView/Code (= 0.0.1)
+  - WLBaseView/Code (0.0.1):
+    - ReactiveObjC
+  - WLForm (0.0.1):
+    - IQKeyboardManager
+    - Masonry
+    - WLBaseView
+    - WLForm/Code (= 0.0.1)
+    - WLIconFont
+    - WLWidget
+  - WLForm/Code (0.0.1):
+    - IQKeyboardManager
+    - Masonry
+    - WLBaseView
+    - WLIconFont
+    - WLWidget
+  - WLIconFont (0.0.1)
+  - WLMElectronicInvoice (0.0.1):
+    - Masonry
+    - MJExtension
+    - ReactiveObjC
+    - WLBaseView
+    - WLForm
+    - WLIconFont
+    - WLMElectronicInvoice/Code (= 0.0.1)
+    - WLModal
+    - WLPickerView
+    - WLWidget
+  - WLMElectronicInvoice/Code (0.0.1):
+    - Masonry
+    - MJExtension
+    - ReactiveObjC
+    - WLBaseView
+    - WLForm
+    - WLIconFont
+    - WLModal
+    - WLPickerView
+    - WLWidget
+  - WLModal (0.0.2):
+    - Masonry
+    - SDWebImage
+    - WLBaseView
+    - WLIconFont
+    - WLModal/Modal (= 0.0.2)
+    - WLWidget
+  - WLModal/Modal (0.0.2):
+    - Masonry
+    - SDWebImage
+    - WLBaseView
+    - WLIconFont
+    - WLWidget
+  - WLPickerView (0.0.1):
+    - WLPickerView/Code (= 0.0.1)
+  - WLPickerView/Code (0.0.1)
+  - WLWidget (0.0.1):
+    - SDWebImage
+    - WLWidget/Category (= 0.0.1)
+    - WLWidget/Macro (= 0.0.1)
+    - WLWidget/SComponent (= 0.0.1)
+  - WLWidget/Category (0.0.1):
+    - SDWebImage
+  - WLWidget/Macro (0.0.1):
+    - SDWebImage
+  - WLWidget/SComponent (0.0.1):
+    - SDWebImage
+
+DEPENDENCIES:
+  - WLMElectronicInvoice
+
+SPEC CHECKSUMS:
+  IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  WLBaseView: 781dd67e3f2384271350545d08ba119fc97abe89
+  WLForm: 898c772489162654cf72d40451341b036446f7eb
+  WLIconFont: bacf1ac5b9107847deab23c0e5217ebff1d9f51e
+  WLMElectronicInvoice: 8eac97638053919977105ddb0fff306dc5a4787a
+  WLModal: baa4157b082528f6b2db9b5066f7d2e3d775fcca
+  WLPickerView: 7e6c0d7794e00ed406b3a7509df393f01cdfd8f5
+  WLWidget: d046a5165612a9bc9fe9a1a8fd75f0261bef1838
+
+PODFILE CHECKSUM: 53b53ab9d1385a039a0c673a2dcd1fd220a9d318
+
+COCOAPODS: 1.4.0

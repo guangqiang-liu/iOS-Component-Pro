@@ -1,0 +1,1 @@
+../../../WLMElectronicInvoice/WLMElectronicInvoice/ElectronicInvoiceQRCodeManager/View/InvoiceCollectionReusableView.h

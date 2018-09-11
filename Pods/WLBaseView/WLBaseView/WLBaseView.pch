@@ -1,0 +1,26 @@
+//
+//  WLBaseView.pch
+//  WLBaseView
+//
+//  Created by 刘光强 on 2018/5/10.
+//  Copyright © 2018年 quangqiang. All rights reserved.
+//
+
+#ifndef WLBaseView_pch
+#define WLBaseView_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "ReactiveObjC.h"
+
+#import "WLBaseViewHeader.h"
+
+#define HexRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define kNavTitleColor HexRGB(0x434343)
+#define kBgColor HexRGB(0xFAF9F9)
+
+#define SELF_BUNDLE [NSBundle bundleForClass:[self class]]
+#define UIImageName(x) [UIImage imageNamed:x inBundle:SELF_BUNDLE compatibleWithTraitCollection:nil]
+
+#endif /* WLBaseView_pch */

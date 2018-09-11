@@ -1,0 +1,1 @@
+../../../WLMElectronicInvoice/WLMElectronicInvoice/Tools/QRCodeUtil/QRCodeUtil.h

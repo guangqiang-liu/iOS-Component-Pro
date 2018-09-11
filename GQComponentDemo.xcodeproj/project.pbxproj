@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AD6BDC34DB73D4607FB4AE8 /* libPods-GQComponentDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70EDF2E7A3094EBFABA0BC8E /* libPods-GQComponentDemo.a */; };
 		9C2697732147BF5F004DA3E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2697722147BF5F004DA3E5 /* AppDelegate.m */; };
 		9C2697762147BF5F004DA3E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2697752147BF5F004DA3E5 /* ViewController.m */; };
 		9C2697792147BF5F004DA3E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C2697772147BF5F004DA3E5 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48A0B4283F3239FBE3A7F37A /* Pods-GQComponentDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GQComponentDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GQComponentDemo/Pods-GQComponentDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		70EDF2E7A3094EBFABA0BC8E /* libPods-GQComponentDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GQComponentDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C26976E2147BF5F004DA3E5 /* GQComponentDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GQComponentDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C2697712147BF5F004DA3E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9C2697722147BF5F004DA3E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		9C26977D2147BF61004DA3E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C26977F2147BF61004DA3E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C2697802147BF61004DA3E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A0D0F2B2A53A4DCFC1EB1BE3 /* Pods-GQComponentDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GQComponentDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GQComponentDemo/Pods-GQComponentDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AD6BDC34DB73D4607FB4AE8 /* libPods-GQComponentDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EDA27B9E5119C048FDAB024 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48A0B4283F3239FBE3A7F37A /* Pods-GQComponentDemo.debug.xcconfig */,
+				A0D0F2B2A53A4DCFC1EB1BE3 /* Pods-GQComponentDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9C2697652147BF5F004DA3E5 = {
 			isa = PBXGroup;
 			children = (
 				9C2697702147BF5F004DA3E5 /* GQComponentDemo */,
 				9C26976F2147BF5F004DA3E5 /* Products */,
+				2EDA27B9E5119C048FDAB024 /* Pods */,
+				9F60FBE6B060F3A1C31E2155 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +87,14 @@
 			path = GQComponentDemo;
 			sourceTree = "<group>";
 		};
+		9F60FBE6B060F3A1C31E2155 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70EDF2E7A3094EBFABA0BC8E /* libPods-GQComponentDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C2697842147BF61004DA3E5 /* Build configuration list for PBXNativeTarget "GQComponentDemo" */;
 			buildPhases = (
+				A0A45D1554AAB0F645F4571F /* [CP] Check Pods Manifest.lock */,
 				9C26976A2147BF5F004DA3E5 /* Sources */,
 				9C26976B2147BF5F004DA3E5 /* Frameworks */,
 				9C26976C2147BF5F004DA3E5 /* Resources */,
+				DE8786B78E493733C2462D9F /* [CP] Embed Pods Frameworks */,
+				118E71814475BA17CD521B24 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -102,11 +129,12 @@
 				TargetAttributes = {
 					9C26976D2147BF5F004DA3E5 = {
 						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 9C2697692147BF5F004DA3E5 /* Build configuration list for PBXProject "GQComponentDemo" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -135,6 +163,128 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		118E71814475BA17CD521B24 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GQComponentDemo/Pods-GQComponentDemo-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/WLBaseView/WLBaseView/Resource/icon_back@2x.png",
+				"${PODS_ROOT}/WLBaseView/WLBaseView/Resource/icon_back@3x.png",
+				"${PODS_ROOT}/WLForm/WLForm/Resource/foldDown@2x.png",
+				"${PODS_ROOT}/WLForm/WLForm/Resource/foldUp@2x.png",
+				"${PODS_ROOT}/WLForm/WLForm/Resource/icon_arrow@2x.png",
+				"${PODS_ROOT}/WLForm/WLForm/Resource/icon_arrow@3x.png",
+				"${PODS_ROOT}/WLForm/WLForm/Resource/icon_selected@2x.png",
+				"${PODS_ROOT}/WLForm/WLForm/Resource/icon_unSelected@2x.png",
+				"${PODS_CONFIGURATION_BUILD_DIR}/WLIconFont/WLIconFont.bundle",
+				"${PODS_ROOT}/WLMElectronicInvoice/WLMElectronicInvoice/Resources/big@2x.png",
+				"${PODS_ROOT}/WLMElectronicInvoice/WLMElectronicInvoice/Resources/big@3x.png",
+				"${PODS_ROOT}/WLMElectronicInvoice/WLMElectronicInvoice/Resources/einvoice_mange_sample@2x.png",
+				"${PODS_ROOT}/WLMElectronicInvoice/WLMElectronicInvoice/Resources/einvoice_mange_sample@3x.png",
+				"${PODS_ROOT}/WLMElectronicInvoice/WLMElectronicInvoice/Resources/einvoice_package_info@2x.png",
+				"${PODS_ROOT}/WLMElectronicInvoice/WLMElectronicInvoice/Resources/einvoice_package_info@3x.png",
+				"${PODS_ROOT}/WLMElectronicInvoice/WLMElectronicInvoice/Resources/filter_state_normal@2x.png",
+				"${PODS_ROOT}/WLMElectronicInvoice/WLMElectronicInvoice/Resources/filter_state_normal@3x.png",
+				"${PODS_ROOT}/WLMElectronicInvoice/WLMElectronicInvoice/Resources/filter_state_selected@2x.png",
+				"${PODS_ROOT}/WLMElectronicInvoice/WLMElectronicInvoice/Resources/filter_state_selected@3x.png",
+				"${PODS_ROOT}/WLMElectronicInvoice/WLMElectronicInvoice/Resources/invoice_apply_shadow@2x.png",
+				"${PODS_ROOT}/WLMElectronicInvoice/WLMElectronicInvoice/Resources/invoice_apply_shadow@3x.png",
+				"${PODS_ROOT}/WLMElectronicInvoice/WLMElectronicInvoice/Resources/invoice_apply_success@2x.png",
+				"${PODS_ROOT}/WLMElectronicInvoice/WLMElectronicInvoice/Resources/invoice_apply_success@3x.png",
+				"${PODS_ROOT}/WLMElectronicInvoice/WLMElectronicInvoice/Resources/line@2x.png",
+				"${PODS_ROOT}/WLMElectronicInvoice/WLMElectronicInvoice/Resources/line@3x.png",
+				"${PODS_ROOT}/WLMElectronicInvoice/WLMElectronicInvoice/Resources/middle@2x.png",
+				"${PODS_ROOT}/WLMElectronicInvoice/WLMElectronicInvoice/Resources/middle@3x.png",
+				"${PODS_ROOT}/WLMElectronicInvoice/WLMElectronicInvoice/Resources/normal@2x.png",
+				"${PODS_ROOT}/WLMElectronicInvoice/WLMElectronicInvoice/Resources/normal@3x.png",
+				"${PODS_ROOT}/WLMElectronicInvoice/WLMElectronicInvoice/Resources/pick_bg@2x.png",
+				"${PODS_ROOT}/WLMElectronicInvoice/WLMElectronicInvoice/Resources/pick_bg@3x.png",
+				"${PODS_ROOT}/WLMElectronicInvoice/WLMElectronicInvoice/Resources/sawtooth@2x.png",
+				"${PODS_ROOT}/WLMElectronicInvoice/WLMElectronicInvoice/Resources/sawtooth@3x.png",
+				"${PODS_ROOT}/WLPickerView/WLPickerView/Resource/province_data.xml",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_back@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_back@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/foldDown@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/foldUp@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_arrow@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_arrow@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_selected@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon_unSelected@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WLIconFont.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/big@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/big@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/einvoice_mange_sample@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/einvoice_mange_sample@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/einvoice_package_info@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/einvoice_package_info@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/filter_state_normal@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/filter_state_normal@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/filter_state_selected@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/filter_state_selected@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/invoice_apply_shadow@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/invoice_apply_shadow@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/invoice_apply_success@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/invoice_apply_success@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/line@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/line@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/middle@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/middle@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/normal@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/normal@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/pick_bg@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/pick_bg@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sawtooth@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sawtooth@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/province_data.xml",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GQComponentDemo/Pods-GQComponentDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0A45D1554AAB0F645F4571F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GQComponentDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE8786B78E493733C2462D9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GQComponentDemo/Pods-GQComponentDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9C26976A2147BF5F004DA3E5 /* Sources */ = {
@@ -281,14 +431,13 @@
 		};
 		9C2697852147BF61004DA3E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48A0B4283F3239FBE3A7F37A /* Pods-GQComponentDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GQComponentDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = quangqiang.GQComponentDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,14 +446,13 @@
 		};
 		9C2697862147BF61004DA3E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0D0F2B2A53A4DCFC1EB1BE3 /* Pods-GQComponentDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GQComponentDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = quangqiang.GQComponentDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

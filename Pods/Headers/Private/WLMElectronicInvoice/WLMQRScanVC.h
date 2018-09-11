@@ -1,0 +1,1 @@
+../../../WLMElectronicInvoice/WLMElectronicInvoice/ElectronicInvoiceQRCodeManager/Controller/WLMQRScanVC.h

@@ -1,0 +1,29 @@
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#else
+#ifndef FOUNDATION_EXPORT
+#if defined(__cplusplus)
+#define FOUNDATION_EXPORT extern "C"
+#else
+#define FOUNDATION_EXPORT extern
+#endif
+#endif
+#endif
+
+//
+//  WLPickerView.pch
+//  WLPickerView
+//
+//  Created by 刘光强 on 2018/5/18.
+//  Copyright © 2018年 quangqiang. All rights reserved.
+//
+
+#ifndef WLPickerView_pch
+#define WLPickerView_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "WLPickerViewManager.h"
+
+#endif /* WLPickerView_pch */
