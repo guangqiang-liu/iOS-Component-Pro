@@ -75,7 +75,7 @@ static const CGFloat kRequirementHeight = 156.f;
         _invoiceTitle.textColor = RGB(67, 67, 67);
         _invoiceTitle.font = SYS_FONT(14);
         _invoiceTitle.textAlignment = NSTextAlignmentLeft;
-        _invoiceTitle.text = @"钱包生活(平潭)科技有限公司上分公司";
+        _invoiceTitle.text = @"xxx科技有限公司上分公司";
     }
     return _invoiceTitle;
 }

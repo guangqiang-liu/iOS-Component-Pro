@@ -10,6 +10,10 @@ target 'GQComponentDemo' do
 
   # Pods for GQComponentDemo
   
+#  pod 'EleInvoiceCategory', :path => '/Users/liuguangqiang/Desktop/personRepo/iOS/componentModule/ModuleCategory/EleInvoiceCategory.podspec'
+
+
   pod 'WLMElectronicInvoice'
+  pod 'EleInvoiceCategory'
 
 end

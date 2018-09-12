@@ -1,4 +1,9 @@
 PODS:
+  - ComponentScheduler (0.0.1):
+    - ComponentScheduler/Code (= 0.0.1)
+  - ComponentScheduler/Code (0.0.1)
+  - EleInvoiceCategory (0.0.1):
+    - ComponentScheduler
   - IQKeyboardManager (6.1.1)
   - Masonry (1.1.0)
   - MJExtension (3.0.15.1)
@@ -25,18 +30,18 @@ PODS:
     - WLIconFont
     - WLWidget
   - WLIconFont (0.0.1)
-  - WLMElectronicInvoice (0.0.1):
+  - WLMElectronicInvoice (0.0.4):
     - Masonry
     - MJExtension
     - ReactiveObjC
     - WLBaseView
     - WLForm
     - WLIconFont
-    - WLMElectronicInvoice/Code (= 0.0.1)
+    - WLMElectronicInvoice/Code (= 0.0.4)
     - WLModal
     - WLPickerView
     - WLWidget
-  - WLMElectronicInvoice/Code (0.0.1):
+  - WLMElectronicInvoice/Code (0.0.4):
     - Masonry
     - MJExtension
     - ReactiveObjC
@@ -75,9 +80,12 @@ PODS:
     - SDWebImage
 
 DEPENDENCIES:
+  - EleInvoiceCategory
   - WLMElectronicInvoice
 
 SPEC CHECKSUMS:
+  ComponentScheduler: 580e2ae664da24d53d90d8f2143719ffbf1b7710
+  EleInvoiceCategory: 9707184f91c54550eaebb3c9627cea60752e386e
   IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
@@ -86,11 +94,11 @@ SPEC CHECKSUMS:
   WLBaseView: 781dd67e3f2384271350545d08ba119fc97abe89
   WLForm: 898c772489162654cf72d40451341b036446f7eb
   WLIconFont: bacf1ac5b9107847deab23c0e5217ebff1d9f51e
-  WLMElectronicInvoice: 8eac97638053919977105ddb0fff306dc5a4787a
+  WLMElectronicInvoice: 3493ad34855508b7bb0595af8fdf69d3837db490
   WLModal: baa4157b082528f6b2db9b5066f7d2e3d775fcca
   WLPickerView: 7e6c0d7794e00ed406b3a7509df393f01cdfd8f5
   WLWidget: d046a5165612a9bc9fe9a1a8fd75f0261bef1838
 
-PODFILE CHECKSUM: 53b53ab9d1385a039a0c673a2dcd1fd220a9d318
+PODFILE CHECKSUM: 6f679d45498d01f27ab07c68b82c6da7ce263204
 
 COCOAPODS: 1.4.0

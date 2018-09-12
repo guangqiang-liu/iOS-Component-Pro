@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'CFCCA827A1EF0B4E2B4533B669B7FC83'
+               BlueprintIdentifier = '5D60873CE557579DF8EDFEB39E81BA84'
                BlueprintName = 'WLBaseView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libWLBaseView.a'>

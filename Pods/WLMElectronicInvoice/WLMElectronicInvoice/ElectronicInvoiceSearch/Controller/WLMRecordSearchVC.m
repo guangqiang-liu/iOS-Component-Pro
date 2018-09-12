@@ -55,7 +55,7 @@
     for (NSInteger i = 0; i < 5; i ++) {
         WLMInvoiceRecordModel *model = [[WLMInvoiceRecordModel alloc] init];
         model.invoiceAmount = @"99";
-        model.companyName = @"钱包生活";
+        model.companyName = @"xxxx";
         model.invoiceDate = @"2018-09-11";
         model.invoiceState = @"0";
         [tempArr addObject:model];

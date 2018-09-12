@@ -73,7 +73,7 @@
     }];
     
     UILabel *rightLable = [[UILabel alloc] init];
-    rightLable.text = @"钱包生活(平潭)科技有限公司";
+    rightLable.text = @"xxx科技有限公司";
     rightLable.textColor = textDarkGrayColor;
     rightLable.font = H14;
     [view addSubview:rightLable];
