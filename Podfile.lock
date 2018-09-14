@@ -7,11 +7,11 @@ PODS:
   - IQKeyboardManager (6.1.1)
   - Masonry (1.1.0)
   - MJExtension (3.0.15.1)
-  - ModuleB (0.0.1):
-    - ModuleB/Controller (= 0.0.1)
-    - ModuleB/Target (= 0.0.1)
-  - ModuleB/Controller (0.0.1)
-  - ModuleB/Target (0.0.1):
+  - ModuleB (0.0.2):
+    - ModuleB/Controller (= 0.0.2)
+    - ModuleB/Target (= 0.0.2)
+  - ModuleB/Controller (0.0.2)
+  - ModuleB/Target (0.0.2):
     - ModuleB/Controller
   - ModuleBCategory (0.0.1):
     - ComponentScheduler
@@ -38,18 +38,18 @@ PODS:
     - WLIconFont
     - WLWidget
   - WLIconFont (0.0.1)
-  - WLMElectronicInvoice (0.0.4):
+  - WLMElectronicInvoice (0.0.5):
     - Masonry
     - MJExtension
     - ReactiveObjC
     - WLBaseView
     - WLForm
     - WLIconFont
-    - WLMElectronicInvoice/Code (= 0.0.4)
+    - WLMElectronicInvoice/Code (= 0.0.5)
     - WLModal
     - WLPickerView
     - WLWidget
-  - WLMElectronicInvoice/Code (0.0.4):
+  - WLMElectronicInvoice/Code (0.0.5):
     - Masonry
     - MJExtension
     - ReactiveObjC
@@ -99,18 +99,18 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
-  ModuleB: 9bb65bcb662307ce65c6479d98308ddfa92d2780
+  ModuleB: d8d7cfbc9051def5107560c8a5cf40fc193048c5
   ModuleBCategory: 2d8489c807aea45251047f3e4d696062092782e7
   ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   WLBaseView: 781dd67e3f2384271350545d08ba119fc97abe89
   WLForm: 898c772489162654cf72d40451341b036446f7eb
   WLIconFont: bacf1ac5b9107847deab23c0e5217ebff1d9f51e
-  WLMElectronicInvoice: 3493ad34855508b7bb0595af8fdf69d3837db490
+  WLMElectronicInvoice: 0c769b2584acc0db36a378c8fe3b9b8364841bb9
   WLModal: baa4157b082528f6b2db9b5066f7d2e3d775fcca
   WLPickerView: 7e6c0d7794e00ed406b3a7509df393f01cdfd8f5
   WLWidget: d046a5165612a9bc9fe9a1a8fd75f0261bef1838
 
-PODFILE CHECKSUM: b148eadf1addedfcbd0b06b6bf3be8d2959bf97b
+PODFILE CHECKSUM: 4f96770968aeb04e996e064bfa3f0f20c6cfe880
 
 COCOAPODS: 1.4.0
