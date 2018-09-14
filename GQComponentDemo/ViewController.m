@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <EleInvoiceCategory/ComponentScheduler+EleInvoice.h>
+#import <ModuleBCategory/ComponentScheduler+ModuleB.h>
 
 @interface ViewController ()
 
@@ -20,18 +21,32 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     self.title = @"这是项目主工程";
+    
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(0, 0, 300, 100);
+    btn.frame = CGRectMake(50, 100, 300, 100);
     btn.backgroundColor = [UIColor orangeColor];
-    btn.center = self.view.center;
-    [btn setTitle:@"点我跳进电子发票模块组件" forState: UIControlStateNormal];
-    [btn addTarget:self action:@selector(push) forControlEvents:UIControlEventTouchUpInside];
+    [btn setTitle:@"点我进电子发票业务模块组件" forState: UIControlStateNormal];
+    [btn addTarget:self action:@selector(moduleA) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    
+    UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn2.frame = CGRectMake(50, 300, 300, 100);
+    btn2.backgroundColor = [UIColor orangeColor];
+    [btn2 setTitle:@"点我进业B务模块B组件" forState: UIControlStateNormal];
+    [btn2 addTarget:self action:@selector(moduleB) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn2];
 }
 
-- (void)push {
+- (void)moduleA {
     UIViewController *VC = [[ComponentScheduler sharedInstance] EleInvoice_ViewControllerWithCallback:^(NSString *result) {
-        NSLog(@"result: --- %@", result);
+        NSLog(@"resultA: --- %@", result);
+    }];
+    [self.navigationController pushViewController:VC animated:YES];
+}
+
+- (void)moduleB {
+    UIViewController *VC = [[ComponentScheduler sharedInstance] ModuleB_viewControllerWithCallback:^(NSString *result) {
+        NSLog(@"resultB: --- %@", result);
     }];
     [self.navigationController pushViewController:VC animated:YES];
 }

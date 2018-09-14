@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3F83C8C4EA3C6C2F17234F105A08DB65'
+               BlueprintIdentifier = 'E379C343F169FF0042B8EDBC52F030EC'
                BlueprintName = 'WLModal'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libWLModal.a'>

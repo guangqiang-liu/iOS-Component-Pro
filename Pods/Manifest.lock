@@ -7,6 +7,14 @@ PODS:
   - IQKeyboardManager (6.1.1)
   - Masonry (1.1.0)
   - MJExtension (3.0.15.1)
+  - ModuleB (0.0.1):
+    - ModuleB/Controller (= 0.0.1)
+    - ModuleB/Target (= 0.0.1)
+  - ModuleB/Controller (0.0.1)
+  - ModuleB/Target (0.0.1):
+    - ModuleB/Controller
+  - ModuleBCategory (0.0.1):
+    - ComponentScheduler
   - ReactiveObjC (3.1.0)
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
@@ -81,6 +89,8 @@ PODS:
 
 DEPENDENCIES:
   - EleInvoiceCategory
+  - ModuleB
+  - ModuleBCategory
   - WLMElectronicInvoice
 
 SPEC CHECKSUMS:
@@ -89,6 +99,8 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  ModuleB: 9bb65bcb662307ce65c6479d98308ddfa92d2780
+  ModuleBCategory: 2d8489c807aea45251047f3e4d696062092782e7
   ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   WLBaseView: 781dd67e3f2384271350545d08ba119fc97abe89
@@ -99,6 +111,6 @@ SPEC CHECKSUMS:
   WLPickerView: 7e6c0d7794e00ed406b3a7509df393f01cdfd8f5
   WLWidget: d046a5165612a9bc9fe9a1a8fd75f0261bef1838
 
-PODFILE CHECKSUM: 6f679d45498d01f27ab07c68b82c6da7ce263204
+PODFILE CHECKSUM: b148eadf1addedfcbd0b06b6bf3be8d2959bf97b
 
 COCOAPODS: 1.4.0
