@@ -14,6 +14,7 @@ target 'GQComponentDemo' do
 
   pod 'WLMElectronicInvoice'
   pod 'EleInvoiceCategory'
+  
   pod 'ModuleB'
   pod 'ModuleBCategory'
 end
