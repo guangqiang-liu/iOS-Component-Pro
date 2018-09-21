@@ -323,7 +323,7 @@ end
 > 上面我们讲解的只是简单的项目组件化架构的基础框架搭建，但是在真正的企业开发中，我们只搭建这样一个简单项目框架结构还远远不能满足需求的开发，我们还需要在项目框架中添枝加叶来满足现有需求。在上面提供的示例Demo中，我将电子发票业务组件独立成一个完整的工程，并结合了当下比较流行的MVVM设计模式和RAC数据绑定框架来实现电子发票模块的功能开发。如果有小伙们对 MVVM + RAC 实战开发感兴趣的，可以单独 install 电子发票工程查看，工程地址:[iOS-MVVM-RAC](https://github.com/guangqiang-liu/iOS-MVVM-RAC)
 
 
-##### 好啦，本篇教程到此就讲完了，下篇教程讲解如何使用MVVM+RAC进行实战开发。小伙伴们，感觉文章对你有帮忙，简书点个赞呗，开源组件化工程项目 [RAC+MVVM](https://github.com/guangqiang-liu/iOS-Component-Demo) 也帮忙点个 star ，先谢过。
+##### 好了，又写到凌晨了，不早了，本篇教程到此就讲完了。下篇教程讲解如何使用MVVM+RAC进行实战开发。小伙伴们，感觉文章对你有帮忙，简书点个赞呗，开源组件化工程项目 [RAC+MVVM](https://github.com/guangqiang-liu/iOS-Component-Demo) 也帮忙点个 star ，先谢过。
 
 ## 更多文章
 * 作者React Native开源项目OneM地址(按照企业开发标准搭建框架完成开发的)：**[https://github.com/guangqiang-liu/OneM](https://github.com/guangqiang-liu/OneM)**：欢迎小伙伴们 **star**
