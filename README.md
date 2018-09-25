@@ -4,7 +4,7 @@
 ## 工程效果预览
 ![image](http://upload-images.jianshu.io/upload_images/6342050-a3211580aef1c283.jpg?imageMogr2/auto-orient/strip)
 
-[组件化工程详解地址](https://www.jianshu.com/p/59c2d2c4b737)
+[组件化工程简书详解地址](https://www.jianshu.com/p/59c2d2c4b737)
 
 ### 下面我们围绕这几个问题来展开讲解
 
@@ -312,7 +312,7 @@ end
 
 好了，现在小伙伴们应该看懂了这一连串的工作流程了吧，如果还没有看懂，那就重新看一遍咯。作者建议直接运行提供的示例Demo项目进行调试，这样便于理解各个组件之间的关系。 
 
-[组件化工程详解地址](https://www.jianshu.com/p/59c2d2c4b737)
+[组件化工程简书详解地址](https://www.jianshu.com/p/59c2d2c4b737)
 
 **最后，我们再来看张组件化完整的架构图：**
 
@@ -323,10 +323,16 @@ end
 > 上面我们讲解的只是简单的项目组件化架构的基础框架搭建，但是在真正的企业开发中，我们只搭建这样一个简单项目框架结构还远远不能满足需求的开发，我们还需要在项目框架中添枝加叶来满足现有需求。在上面提供的示例Demo中，我将电子发票业务组件独立成一个完整的工程，并结合了当下比较流行的MVVM设计模式和RAC数据绑定框架来实现电子发票模块的功能开发。如果有小伙们对 MVVM + RAC 实战开发感兴趣的，可以单独 install 电子发票工程查看，工程地址:[iOS-MVVM-RAC](https://github.com/guangqiang-liu/iOS-MVVM-RAC)
 
 
-##### 好了，又写到凌晨了，不早了，本篇教程到此就讲完了。下篇教程讲解如何使用MVVM+RAC进行实战开发。小伙伴们，感觉文章对你有帮忙，简书点个赞呗，开源组件化工程项目 [RAC+MVVM](https://github.com/guangqiang-liu/iOS-Component-Demo) 也帮忙点个 star ，先谢过。
+##### 好了，又写到凌晨了，不早了，本篇教程到此就讲完了。下篇教程讲解如何使用MVVM+RAC进行实战开发。小伙伴们，感觉文章对你有帮忙，简书点个赞呗，组件化开源项目 [iOS-Component-Pro](https://github.com/guangqiang-liu/iOS-Component-Demo) 也帮忙点个 star 吧，先谢过。
 
 ## 更多文章
 * 作者React Native开源项目OneM地址(按照企业开发标准搭建框架完成开发的)：**[https://github.com/guangqiang-liu/OneM](https://github.com/guangqiang-liu/OneM)**：欢迎小伙伴们 **star**
 * 作者简书主页：包含60多篇RN开发相关的技术文章[http://www.jianshu.com/u/023338566ca5](http://www.jianshu.com/u/023338566ca5) 欢迎小伙伴们：**多多关注**，**多多点赞**
 * React Native QQ技术交流群(600+ RN工程师)：**620792950** 欢迎小伙伴进群交流学习
 * iOS QQ技术交流群：**678441305** 欢迎小伙伴进群交流学习
+
+## 欢迎扫码加入RN技术交流QQ群
+![RN群二维码，600+ RN工程师在等你加入哦](http://ovyjkveav.bkt.clouddn.com/18-9-25/84266108.jpg)
+
+## 欢迎扫码加入iOS技术交流QQ群
+![QQ群二维码](http://ovyjkveav.bkt.clouddn.com/18-9-25/74983128.jpg)
