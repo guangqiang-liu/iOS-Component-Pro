@@ -332,7 +332,7 @@ end
 * iOS QQ技术交流群：**678441305** 欢迎小伙伴进群交流学习
 
 ## 欢迎扫码加入RN技术交流QQ群
-![RN群二维码，600+ RN工程师在等你加入哦](http://ovyjkveav.bkt.clouddn.com/18-9-25/84266108.jpg)
+![RN群二维码，600+ RN工程师在等你加入哦](http://ovyjkveav.bkt.clouddn.com/18-9-26/73428915.jpg)
 
 ## 欢迎扫码加入iOS技术交流QQ群
-![QQ群二维码](http://ovyjkveav.bkt.clouddn.com/18-9-25/74983128.jpg)
+![QQ群二维码](http://ovyjkveav.bkt.clouddn.com/18-9-26/38952355.jpg)
