@@ -325,6 +325,15 @@ end
 
 ##### 好了，又写到凌晨了，不早了，本篇教程到此就讲完了。下篇教程讲解如何使用MVVM+RAC进行实战开发。小伙伴们，感觉文章对你有帮忙，简书点个赞呗，组件化开源项目 [iOS-Component-Pro](https://github.com/guangqiang-liu/iOS-Component-Demo) 也帮忙点个 star 吧，先谢过。
 
+## 参考文献
+> 本篇文章主要借鉴了casatwy的CTMediator思想重新实践了一遍，下面也有蘑菇街的MGJRouter 和 阿里的 BeeHive 供大家学习参考。
+
+* https://casatwy.com/modulization_in_action.html
+* https://github.com/casatwy/CTMediator
+* https://github.com/alibaba/BeeHive/blob/master/README-CN.md
+* http://limboy.me/tech/2016/03/10/mgj-components.html
+* https://github.com/meili/MGJRouter
+
 ## 更多文章
 * 作者React Native开源项目OneM地址(按照企业开发标准搭建框架完成开发的)：**[https://github.com/guangqiang-liu/OneM](https://github.com/guangqiang-liu/OneM)**：欢迎小伙伴们 **star**
 * 作者简书主页：包含60多篇RN开发相关的技术文章[http://www.jianshu.com/u/023338566ca5](http://www.jianshu.com/u/023338566ca5) 欢迎小伙伴们：**多多关注**，**多多点赞**
