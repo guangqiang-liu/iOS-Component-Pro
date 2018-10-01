@@ -1,15 +1,14 @@
 //
-//  ComponentScheduler+EleInvoice.h
+//  CTMediator+Elelnvoice.h
 //  ModuleCategory
 //
-//  Created by 刘光强 on 2018/9/11.
+//  Created by 刘光强 on 2018/10/1.
 //  Copyright © 2018年 quangqiang. All rights reserved.
 //
 
-#import "ComponentScheduler.h"
+#import "CTMediator.h"
 
-@interface ComponentScheduler (EleInvoice)
+@interface CTMediator (Elelnvoice)
 
 - (UIViewController *)EleInvoice_ViewControllerWithCallback:(void(^)(NSString *result))callback;
-
 @end

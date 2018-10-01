@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"这是页面B";
+    self.view.backgroundColor = [UIColor purpleColor];
 }
 
 - (void)didReceiveMemoryWarning {

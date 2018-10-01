@@ -1,20 +1,18 @@
 PODS:
-  - ComponentScheduler (0.0.1):
-    - ComponentScheduler/Code (= 0.0.1)
-  - ComponentScheduler/Code (0.0.1)
-  - EleInvoiceCategory (0.0.1):
-    - ComponentScheduler
+  - CTMediator (25)
+  - EleInvoiceCategory (0.0.2):
+    - CTMediator
   - IQKeyboardManager (6.1.1)
   - Masonry (1.1.0)
   - MJExtension (3.0.15.1)
-  - ModuleB (0.0.2):
-    - ModuleB/Controller (= 0.0.2)
-    - ModuleB/Target (= 0.0.2)
-  - ModuleB/Controller (0.0.2)
-  - ModuleB/Target (0.0.2):
+  - ModuleB (0.0.3):
+    - ModuleB/Controller (= 0.0.3)
+    - ModuleB/Target (= 0.0.3)
+  - ModuleB/Controller (0.0.3)
+  - ModuleB/Target (0.0.3):
     - ModuleB/Controller
-  - ModuleBCategory (0.0.1):
-    - ComponentScheduler
+  - ModuleBCategory (0.0.2):
+    - CTMediator
   - ReactiveObjC (3.1.0)
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
@@ -94,13 +92,13 @@ DEPENDENCIES:
   - WLMElectronicInvoice
 
 SPEC CHECKSUMS:
-  ComponentScheduler: 580e2ae664da24d53d90d8f2143719ffbf1b7710
-  EleInvoiceCategory: 9707184f91c54550eaebb3c9627cea60752e386e
+  CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
+  EleInvoiceCategory: a84f556bbbf488b23d2c0b10563eef8afa24e9ce
   IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
-  ModuleB: d8d7cfbc9051def5107560c8a5cf40fc193048c5
-  ModuleBCategory: 2d8489c807aea45251047f3e4d696062092782e7
+  ModuleB: f5047ea5598dd9b46bd6af9677aabccb9c564271
+  ModuleBCategory: cd34e72f1a51ba8bfab8e202dd67c835048f9c44
   ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   WLBaseView: 781dd67e3f2384271350545d08ba119fc97abe89

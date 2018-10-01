@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '0123EF9DC5A6B115788A7D7712590731'
+               BlueprintIdentifier = 'F43E6C326B2715AA2249C522C257673D'
                BlueprintName = 'WLMElectronicInvoice'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libWLMElectronicInvoice.a'>

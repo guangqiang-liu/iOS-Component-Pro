@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DEAD1D13440CC82EB9F0016B1739EE63'
+               BlueprintIdentifier = '572DF5E028B174749ECA889683ABFD80'
                BlueprintName = 'WLForm'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libWLForm.a'>

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '1356E3675B939DB06BD1418D56FE40E4'
+               BlueprintIdentifier = 'BCEFA45008D52B65FBCFF1C8888AB5C2'
                BlueprintName = 'WLIconFont'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libWLIconFont.a'>

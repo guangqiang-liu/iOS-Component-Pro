@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D3530D143BB8982B3FF2F59E375C3602'
+               BlueprintIdentifier = 'D48E9BC7ADEBC47D6C9FC87947FDA7DB'
                BlueprintName = 'WLPickerView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libWLPickerView.a'>

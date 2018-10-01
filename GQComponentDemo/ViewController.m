@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import <EleInvoiceCategory/ComponentScheduler+EleInvoice.h>
-#import <ModuleBCategory/ComponentScheduler+ModuleB.h>
+#import <EleInvoiceCategory/CTMediator+Elelnvoice.h>
+#import <ModuleBCategory/CTMediator+ModuleB.h>
 
 @interface ViewController ()
 
@@ -38,14 +38,14 @@
 }
 
 - (void)moduleA {
-    UIViewController *VC = [[ComponentScheduler sharedInstance] EleInvoice_ViewControllerWithCallback:^(NSString *result) {
+    UIViewController *VC = [[CTMediator sharedInstance] EleInvoice_ViewControllerWithCallback:^(NSString *result) {
         NSLog(@"resultA: --- %@", result);
     }];
     [self.navigationController pushViewController:VC animated:YES];
 }
 
 - (void)moduleB {
-    UIViewController *VC = [[ComponentScheduler sharedInstance] ModuleB_viewControllerWithCallback:^(NSString *result) {
+    UIViewController *VC = [[CTMediator sharedInstance] ModuleB_viewControllerWithCallback:^(NSString *result) {
         NSLog(@"resultB: --- %@", result);
     }];
     [self.navigationController pushViewController:VC animated:YES];

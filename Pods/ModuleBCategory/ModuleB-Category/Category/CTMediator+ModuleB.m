@@ -1,14 +1,14 @@
 //
-//  ComponentScheduler+ModuleB.m
+//  CTMediator+ModuleB.m
 //  ModuleB-Category
 //
-//  Created by 刘光强 on 2018/9/14.
+//  Created by 刘光强 on 2018/10/1.
 //  Copyright © 2018年 quangqiang. All rights reserved.
 //
 
-#import "ComponentScheduler+ModuleB.h"
+#import "CTMediator+ModuleB.h"
 
-@implementation ComponentScheduler (ModuleB)
+@implementation CTMediator (ModuleB)
 
 - (UIViewController *)ModuleB_viewControllerWithCallback:(void(^)(NSString *result))callback {
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
@@ -16,3 +16,4 @@
     return [self performTarget:@"ModuleB" action:@"viewController" params:params shouldCacheTarget:NO];
 }
 @end
+    

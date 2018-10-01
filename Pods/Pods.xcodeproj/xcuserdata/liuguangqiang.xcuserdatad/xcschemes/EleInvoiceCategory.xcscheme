@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '1A66DE011F1328D83421641E96C7D50B'
+               BlueprintIdentifier = 'A437B0CE13ACFA1827E65E6FDBEF4AE0'
                BlueprintName = 'EleInvoiceCategory'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libEleInvoiceCategory.a'>
