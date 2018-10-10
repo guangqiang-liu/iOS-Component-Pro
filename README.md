@@ -4,7 +4,7 @@
 ## 工程效果预览
 ![image](http://upload-images.jianshu.io/upload_images/6342050-a3211580aef1c283.jpg?imageMogr2/auto-orient/strip)
 
-[组件化工程简书详解地址](https://www.jianshu.com/p/59c2d2c4b737)
+[掘金专栏文章详解](https://juejin.im/post/5ba3cc0df265da0aac6fdaa0)
 
 ### 下面我们围绕这几个问题来展开讲解
 
@@ -312,8 +312,6 @@ end
 
 好了，现在小伙伴们应该看懂了这一连串的工作流程了吧，如果还没有看懂，那就重新看一遍咯。作者建议直接运行提供的示例Demo项目进行调试，这样便于理解各个组件之间的关系。 
 
-[组件化工程简书详解地址](https://www.jianshu.com/p/59c2d2c4b737)
-
 **最后，我们再来看张组件化完整的架构图：**
 
 ![image](http://upload-images.jianshu.io/upload_images/6342050-6db65dfbc259432d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -324,6 +322,8 @@ end
 
 
 ##### 好了，又写到凌晨了，不早了，本篇教程到此就讲完了。下篇教程讲解如何使用MVVM+RAC进行实战开发。小伙伴们，感觉文章对你有帮忙，简书点个赞呗，组件化开源项目 [iOS-Component-Pro](https://github.com/guangqiang-liu/iOS-Component-Demo) 也帮忙点个 star 吧，先谢过。
+
+[掘金专栏文章详解](https://juejin.im/post/5ba3cc0df265da0aac6fdaa0)
 
 ## 参考文献
 > 本篇文章主要借鉴了casatwy的CTMediator思想重新实践了一遍，下面也有蘑菇街的MGJRouter 和 阿里的 BeeHive 供大家学习参考。
