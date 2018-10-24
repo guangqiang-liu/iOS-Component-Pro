@@ -34,8 +34,8 @@ static const NSInteger kStateImageTag = 9999;
     if (self) {
         self.backgroundColor = bgColor;
         self.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-        self.stateImageArr = [NSMutableArray array];
-        self.infoArray = @[@{
+        _stateImageArr = [NSMutableArray array];
+        _infoArray = @[@{
                                @"packageType":@"套餐A",
                                @"invoiceCount":@"10000",
                                @"merchantType":@"普通类型",
@@ -80,7 +80,6 @@ static const NSInteger kStateImageTag = 9999;
 - (void)bindViewModel {
     [super bindViewModel];
     RAC(self.applyButton, enabled) = RACObserve(self.readProtocolButton, selected);
-    
 }
 
 - (UIButton *)applyButton {
@@ -91,7 +90,9 @@ static const NSInteger kStateImageTag = 9999;
         _applyButton.layer.cornerRadius = 4;
         _applyButton.layer.masksToBounds = YES;
         [_applyButton createGradientButtonWithSize:CGSizeMake(MaxY(self.readProtocolButton) + 32, 44) colorArray:@[HexRGB(0xFF7E4A), HexRGB(0xFF4A4A)] gradientType:GradientFromLeftToRight];
+        @weakify(self);
         [_applyButton whenTapped:^{
+            @strongify(self);
             !_packageSelectBlock ?: _packageSelectBlock(self.packageType);
         }];
     }
@@ -124,7 +125,9 @@ static const NSInteger kStateImageTag = 9999;
         _protocolLable.font = H12;
         _protocolLable.textColor = textGrayColor;
         _protocolLable.textAlignment = NSTextAlignmentLeft;
+        @weakify(self);
         [_protocolLable whenTapped:^{
+            @strongify(self);
             !_invoiceProtocolActionBlock ?: _invoiceProtocolActionBlock();
             UIViewController *currentVC = [self getCurrentViewController];
             WLMEInvoiceProtocolVC *VC = [[WLMEInvoiceProtocolVC alloc] init];
@@ -143,7 +146,9 @@ static const NSInteger kStateImageTag = 9999;
         view.layer.shadowOpacity = 0.2f;
         view.layer.shadowOffset = CGSizeMake(0, 0);
         view.layer.shadowRadius = 4.0f;
+        @weakify(self);
         [view whenTapped:^{
+            @strongify(self);
             self.packageType = [NSNumber numberWithInteger:i];
             for (UIImageView *imageView in self.stateImageArr) {
                 if (imageView.tag == kStateImageTag + i) {

@@ -168,7 +168,6 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
 @synthesize shouldToolbarUsesTextFieldTintColor =   _shouldToolbarUsesTextFieldTintColor;
 @synthesize toolbarTintColor                    =   _toolbarTintColor;
 @synthesize toolbarBarTintColor                 =   _toolbarBarTintColor;
-@dynamic shouldShowTextFieldPlaceholder;
 @synthesize shouldShowToolbarPlaceholder        =   _shouldShowToolbarPlaceholder;
 @synthesize placeholderFont                     =   _placeholderFont;
 @synthesize placeholderColor                    =   _placeholderColor;
@@ -385,16 +384,6 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
     }
     
     return enable;
-}
-
--(BOOL)shouldShowTextFieldPlaceholder
-{
-    return _shouldShowToolbarPlaceholder;
-}
-
--(void)setShouldShowTextFieldPlaceholder:(BOOL)shouldShowTextFieldPlaceholder
-{
-    _shouldShowToolbarPlaceholder = shouldShowTextFieldPlaceholder;
 }
 
 //	Setting keyboard distance from text field.
@@ -626,7 +615,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
     CGFloat specialKeyboardDistanceFromTextField = textFieldView.keyboardDistanceFromTextField;
 
     {
-        UISearchBar *searchBar = textFieldView.searchBar;
+        UISearchBar *searchBar = textFieldView.textFieldSearchBar;
         
         if (searchBar)
         {
@@ -1929,7 +1918,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
 
         //Handling search bar special case
         {
-            UISearchBar *searchBar = currentTextFieldView.searchBar;
+            UISearchBar *searchBar = currentTextFieldView.textFieldSearchBar;
             
             if (searchBar)
             {
@@ -1967,7 +1956,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
 
         //Handling search bar special case
         {
-            UISearchBar *searchBar = currentTextFieldView.searchBar;
+            UISearchBar *searchBar = currentTextFieldView.textFieldSearchBar;
             
             if (searchBar)
             {
@@ -2003,7 +1992,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
 
     //Handling search bar special case
     {
-        UISearchBar *searchBar = currentTextFieldView.searchBar;
+        UISearchBar *searchBar = currentTextFieldView.textFieldSearchBar;
         
         if (searchBar)
         {

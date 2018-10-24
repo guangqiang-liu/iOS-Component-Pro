@@ -184,13 +184,16 @@
     row.itemHeight = 48;
     row.cellClass = [WLFormTextInputCell class];
     row.value = info.mutableCopy;
+    @weakify(self);
     row.itemConfigBlock = ^(WLFormTextInputCell *cell, id value, NSIndexPath *indexPath) {
         cell.leftlabel.text = value[kLeftKey];
         cell.rightField.text = value[kRightKey];
         cell.rightField.enabled = ![value[kDisableKey] boolValue];
         cell.rightField.textColor = [value[kDisableKey] boolValue] ? HexRGB(0xcfcfcf) : textBlackColor;
         cell.rightField.placeholder = value[kPlaceholder];
+        @strongify(self);
         cell.textChangeBlock = ^(NSString *text) {
+            @strongify(self);
             value[kRightKey] = text;
             [self changeSubmitButtonState];
         };
@@ -213,12 +216,15 @@
     row.itemHeight = 48;
     row.cellClass = [WLFormTextViewCell class];
     row.value = info.mutableCopy;
+    @weakify(self);
     row.itemConfigBlock = ^(WLFormTextViewCell *cell, id value, NSIndexPath *indexPath) {
+        @strongify(self);
         cell.leftTitle.text = value[kLeftKey];
         cell.textView.text = value[kRightKey];
         cell.textView.textColor = [value[kDisableKey] boolValue] ? HexRGB(0xcfcfcf) : textBlackColor;
         cell.textView.wl_placeHolder = value[kPlaceholder];
         cell.textChangeBlock = ^(NSString *text) {
+            @strongify(self);
             value[kRightKey] = text;
             [self changeSubmitButtonState];
         };
@@ -241,9 +247,13 @@
     row.cellClass = [WLFormMoreInfoCell class];
     row.itemHeight = 54.f;
     row.value = info.mutableCopy;
+    @weakify(self);
     row.itemConfigBlock = ^(WLFormMoreInfoCell *cell, id value, NSIndexPath *indexPath) {
+        @strongify(self);
         cell.leftTitle.text = value[kLeftKey];
         cell.moreInfoBlock = ^{
+            // 这里当不加下面的strongify，就会导致内存泄漏问题，如果调试y如何使用`MLeaksFinder` 来检查内存泄漏，可以将下面一行代码注释看看
+            @strongify(self);
             WLFormSectionViewModel *section = self.form.sectionArray[2];
             section.hidden = !section.hidden;
             [self.tableView reloadData];
@@ -262,7 +272,9 @@
         cell.leftLable.text = value[kLeftKey];
         cell.rightTitle = value[kRightKey];
     };
+    @weakify(self);
     row.didSelectCellBlock = ^(NSIndexPath *indexPath, id value, WLFormSelectCell *cell) {
+        @strongify(self);
         [self selectItemWithDataSource:@[@"1", @"2", @"3", @"4"] title:value[kLeftKey] callback:^(NSString *item) {
             value[kRightKey] = item;
             cell.rightTitle = item;

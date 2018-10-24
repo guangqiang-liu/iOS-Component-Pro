@@ -50,7 +50,9 @@
         [_bottomButton setTitleColor:white_color forState:UIControlStateNormal];
         _bottomButton.titleLabel.font = H18;
         [_bottomButton createGradientButtonWithSize:_bottomButton.frame.size colorArray:@[HexRGB(0xFF7E4A), HexRGB(0xFF4A4A)] gradientType:GradientFromLeftToRight];
+        @weakify(self);
         [_bottomButton whenTapped:^{
+            @strongify(self);
             WLMFillTaxationInfoVC *VC = [[WLMFillTaxationInfoVC alloc] initWithViewModel:self.introduceViewModel.taxaInfoViewModel];
             [self.navigationController pushViewController:VC animated:YES];
         }];
@@ -58,4 +60,7 @@
     return _bottomButton;
 }
 
+- (void) dealloc {
+    NSLog(@"WLMEInvoiceIntroduceVC");
+}
 @end

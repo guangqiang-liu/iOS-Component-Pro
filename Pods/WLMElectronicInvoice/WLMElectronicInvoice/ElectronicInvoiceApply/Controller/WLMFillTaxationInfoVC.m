@@ -108,12 +108,15 @@
     row.itemHeight = 48.f;
     row.cellClass = [WLFormTextInputCell class];
     row.value = userInfo.mutableCopy;
+    @weakify(self);
     row.itemConfigBlock = ^(WLFormTextInputCell *cell, id value, NSIndexPath *indexPath) {
+        @strongify(self);
         cell.leftlabel.text = value[kLeftKey];
         cell.rightField.text = value[kRightKey];
         cell.rightField.enabled = ![value[kDisableKey] boolValue];
         cell.rightField.placeholder = value[kPlaceholder];
         cell.textChangeBlock = ^(NSString *text) {
+            @strongify(self);
             value[kRightKey] = text;
             text.length ? (self.buttonEnable = YES) : (self.buttonEnable = NO);
         };
@@ -131,11 +134,13 @@
     row = [[WLFormItemViewModel alloc] initFormItemWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"WLFormBottomTipButtonCell"];
     row.cellClass = [WLFormBottomTipButtonCell class];
     row.itemHeight = 48.f;
-    __weak typeof(self) weakSelf = self;
+    @weakify(self);
     row.itemConfigBlock = ^(WLFormBottomTipButtonCell *cell, id value, NSIndexPath *indexPath) {
+        @strongify(self);
         [cell.tipButton setTitle:info[kLeftKey] forState:UIControlStateNormal];
         [cell.tipButton whenTapped:^{
-             [weakSelf renderModal];
+            @strongify(self);
+             [self renderModal];
         }];
     };
     return row;
@@ -146,12 +151,14 @@
     row = [[WLFormItemViewModel alloc] initFormItemWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"WLFormBottomButtonCell"];
     row.cellClass = [WLFormBottomButtonCell class];
     row.itemHeight = 78.f;
-     __weak typeof(self) weakSelf = self;
+    @weakify(self);
     row.itemConfigBlock = ^(WLFormBottomButtonCell *cell, id value, NSIndexPath *indexPath) {
+        @strongify(self);
         RAC(cell.button, enabled) = RACObserve(self, buttonEnable);
         [cell.button setTitle:info[kLeftKey] forState:UIControlStateNormal];
         [cell.button whenTapped:^{
-            [weakSelf submitForm];
+            @strongify(self);
+            [self submitForm];
         }];
     };
     return row;
@@ -168,7 +175,9 @@
             WLTitleWithContentModal *view = [[WLTitleWithContentModal alloc] initWithTitle:@"友情提示" content:@"开通该业务后，须由财务或法人携带相关材料，至所属税务分局进行电子发票发行申请。如需帮助，请联系客户经理"];
             WLModal *modal = [[WLModal alloc] init];
             modal.buttonTitles = @[@"暂不开通", @"确认开通"];
+            @weakify(self);
             [modal setOnButtonTouchUpInside:^(WLModal *modal, NSInteger buttonIndex) {
+                @strongify(self);
                 buttonIndex != 1 ?: [self formRequestWithParams:requestParams];
                 [modal close];
             }];
@@ -210,6 +219,10 @@
     };
     [modal addContentView:view];
     [modal show];
+}
+
+- (void)dealloc {
+    NSLog(@"WLMFillTaxationInfoVC");
 }
 
 @end

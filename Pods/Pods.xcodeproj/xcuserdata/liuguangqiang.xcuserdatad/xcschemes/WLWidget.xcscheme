@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B3CEC1B053FBBEBB00FA06B2BD8ADF12'
+               BlueprintIdentifier = '1D20E903B7E5BD2689C6318E2BB23E45'
                BlueprintName = 'WLWidget'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libWLWidget.a'>

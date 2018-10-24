@@ -58,7 +58,9 @@
 
 - (void)bindViewModel {
     [super bindViewModel];
+    @weakify(self);
     [[[self.merchantViewModel.merchantListCmd execute:nil] deliverOn:[RACScheduler mainThreadScheduler]] subscribeNext:^(NSArray *modelArr) {
+        @strongify(self);
         self.dataArray = modelArr;
         [self.tableView reloadData];
     }];
@@ -106,6 +108,10 @@
 //    WLMInvoiceManagerListVC *VC = [[WLMInvoiceManagerListVC alloc] init];
     WLMInvoiceDetailVC *VC = [[WLMInvoiceDetailVC alloc] init];
     [self.navigationController pushViewController:VC animated:YES];
+}
+
+- (void)dealloc {
+    NSLog(@"WLMSelectApplyMerchantVC");
 }
 
 @end

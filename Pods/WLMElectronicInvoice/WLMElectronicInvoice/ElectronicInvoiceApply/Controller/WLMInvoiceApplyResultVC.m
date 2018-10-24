@@ -46,12 +46,18 @@
 - (WLMInvoiceApplyResultView *)resultView {
     if (!_resultView) {
         _resultView = [[WLMInvoiceApplyResultView alloc] initWithViewModel:self.resutViewModel];
+        @weakify(self);
         [_resultView.button whenTapped:^{
+            @strongify(self);
             WLMOpenInvoiceVC *VC = [[WLMOpenInvoiceVC alloc] init];
             [self.navigationController pushViewController:VC animated:YES];
         }];
     }
     return _resultView;
+}
+
+- (void)dealloc {
+    NSLog(@"WLMInvoiceApplyResultVC");
 }
 
 @end

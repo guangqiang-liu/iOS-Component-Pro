@@ -98,6 +98,7 @@
     row.itemHeight = 68;
     row.cellClass = [WLFormSumTextInputCell class];
     row.value = info.mutableCopy;
+    @weakify(self);
     row.itemConfigBlock = ^(WLFormSumTextInputCell *cell, id value, NSIndexPath *indexPath) {
         cell.leftLable.text = value[kLeftKey];
         cell.rightInput.text = value[kRightKey];
@@ -105,6 +106,7 @@
         cell.rightInput.placeholder = value[kPlaceholder];
         __weak typeof(cell) weakCell = cell;
         cell.textChangeBlock = ^(NSString *text) {
+            @strongify(self);
             value[kRightKey] = text;
             text.length ? (weakCell.rightInput.font = HB26) : (weakCell.rightInput.font = H14);
             text.length ? (self.buttonEnabled = YES) : (self.buttonEnabled = NO);
@@ -146,16 +148,22 @@
     row = [[WLFormItemViewModel alloc] initFormItemWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"WLFormBottomButtonCell"];
     row.cellClass = [WLFormBottomButtonCell class];
     row.itemHeight = 78.f;
-    __weak typeof(self) weakSelf = self;
+    @weakify(self);
     row.itemConfigBlock = ^(WLFormBottomButtonCell *cell, id value, NSIndexPath *indexPath) {
+        @strongify(self);
         [cell.button setTitle:info[kLeftKey] forState:UIControlStateNormal];
         RAC(cell.button, enabled) = RACObserve(self, buttonEnabled);
         [cell.button whenTapped:^{
+            @strongify(self);
             WLMResendInvoiceVC *VC = [[WLMResendInvoiceVC alloc] init];
-            [weakSelf.navigationController pushViewController:VC animated:YES];
+            [self.navigationController pushViewController:VC animated:YES];
         }];
     };
     return row;
+}
+
+- (void)dealloc {
+    NSLog(@"WLMOpenInvoiceVC");
 }
 
 @end

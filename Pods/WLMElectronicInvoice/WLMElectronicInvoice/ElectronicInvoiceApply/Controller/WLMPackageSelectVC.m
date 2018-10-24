@@ -49,6 +49,7 @@
         _packageView.packageSelectBlock = ^(NSNumber * packageType) {
             @strongify(self);
             [[[self.packageViewModel.submitCmd execute:nil] deliverOn:[RACScheduler mainThreadScheduler]] subscribeNext:^(id  _Nullable x) {
+                @strongify(self);
                 WLMInvoiceApplyResultVC *VC = [[WLMInvoiceApplyResultVC alloc] initWithViewModel:self.packageViewModel.resultViewModel];
                 [self.navigationController pushViewController:VC animated:YES];
             }];
@@ -57,4 +58,7 @@
     return _packageView;
 }
 
+- (void)dealloc {
+    NSLog(@"WLMPackageSelectVC");
+}
 @end
