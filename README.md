@@ -326,7 +326,6 @@ end
 [掘金专栏文章详解](https://juejin.im/post/5ba3cc0df265da0aac6fdaa0)
 
 ## 参考文献
-> 本篇文章主要借鉴了casatwy的CTMediator思想重新实践了一遍，下面也有蘑菇街的MGJRouter 和 阿里的 BeeHive 供大家学习参考。
 
 * https://casatwy.com/modulization_in_action.html
 * https://github.com/casatwy/CTMediator
