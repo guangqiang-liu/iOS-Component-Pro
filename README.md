@@ -335,6 +335,5 @@ end
 
 ## 更多文章
 * 作者React Native开源项目OneM地址(按照企业开发标准搭建框架完成开发的)：**[https://github.com/guangqiang-liu/OneM](https://github.com/guangqiang-liu/OneM)**：欢迎小伙伴们 **star**
-* 作者简书主页：包含60多篇RN开发相关的技术文章[http://www.jianshu.com/u/023338566ca5](http://www.jianshu.com/u/023338566ca5) 欢迎小伙伴们：**多多关注**，**多多点赞**
 * React Native QQ技术交流群(600+ RN工程师)：**620792950** 欢迎小伙伴进群交流学习
 * iOS QQ技术交流群：**678441305** 欢迎小伙伴进群交流学习
